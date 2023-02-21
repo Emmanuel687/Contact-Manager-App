@@ -1,9 +1,8 @@
 import React from "react";
 
-const Contactlist = (props) => {
-  const renderContactList = props.contacts.map((contact) => (
+const Contactlist = ({contacts}) => {
+  const renderContactList = contacts.map((contact) => (
     <div className="item">
-    
       <div className="content">
         <div className="header">{contact.name}</div>
         <div>{contact.email}</div>
