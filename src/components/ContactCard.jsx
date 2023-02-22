@@ -7,6 +7,7 @@ const ContactCard = ({contact}) => {
 
   return (
     <div className="item">
+      <img className="ui avatar " src={user} alt="" />
       <div className="content">
         <div className="header">{name}</div>
         <div>{email}</div>
