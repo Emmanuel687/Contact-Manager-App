@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
-import ContactCard from "./components/ContactCard";
 import Contactlist from "./components/Contactlist";
 function App() {
   const contacts =[{
@@ -26,7 +25,6 @@ function App() {
       <Header />
       <AddContact />
       <Contactlist contacts={contacts}/>
-      <ContactCard />
 
     </div>
 

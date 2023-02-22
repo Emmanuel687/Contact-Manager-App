@@ -1,4 +1,5 @@
 import React from "react";
+import user from "../images/user.png"
 
 const ContactCard = ({contact}) => {
   const{id,name,email}=contact
