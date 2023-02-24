@@ -1,33 +1,20 @@
 import React from "react";
 
 class AddContact extends React.Component {
+  // Stores current State
   state = {
     name: "",
     email: "",
   };
-  add=(e)=>{
+  add = (e) => {
     e.preventDefault();
-    if(this.state.name===""&&this.state.email===""){
-      alert("All the fields are mandatory")
+    if (this.state.name === "" && this.state.email === "") {
+      alert("All the fields are mandatory");
       return;
     }
-    console.log(this.state)
+    console.log(this.state);
+  };
 
-  }    
-     
-  state = {
-      name: "",
-      email: "",
-    };
-    add=(e)=>{
-      e.preventDefault();
-      if(this.state.name===""&&this.state.email===""){
-        alert("All the fields are mandatory")
-        return;
-      }
-      console.log(this.state)
-
-    }
   render() {
     return (
       <div className="ui main">
@@ -40,7 +27,8 @@ class AddContact extends React.Component {
               name="name"
               placeholder="Name"
               value={this.state.name}
-              onChange={(e) => this.setState({name:e.target.value})}
+              // Update Current State
+              onChange={(e) => this.setState({ name: e.target.value })}
             ></input>
           </div>
 
@@ -51,7 +39,8 @@ class AddContact extends React.Component {
               name="email"
               placeholder="Email"
               value={this.state.email}
-              onChange={(e) => this.setState({email:e.target.value})}
+              // Update Current State
+              onChange={(e) => this.setState({ email: e.target.value })}
             ></input>
           </div>
 
