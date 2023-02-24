@@ -1,4 +1,5 @@
 import React from "react";
+// Onchange triggers when a value input is changed
 
 class AddContact extends React.Component {
   // Stores current State
@@ -6,6 +7,7 @@ class AddContact extends React.Component {
     name: "",
     email: "",
   };
+  // OnSubmit Function
   add = (e) => {
     e.preventDefault();
     if (this.state.name === "" && this.state.email === "") {
