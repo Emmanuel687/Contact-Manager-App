@@ -5,12 +5,16 @@ import Contactlist from "./components/Contactlist";
 import { useState } from "react";
 function App() {
   const[contacts,setContact]=useState([])
+  const addContactHandler =(contact)=>{
+  setContact([...contacts, contact])
+
+  }
 
 
   return (
     <div className="ui container">
       <Header />
-      <AddContact />
+      <AddContact addContactHandler={addContactHandler}/>
       <Contactlist contacts={contacts}/>
 
     </div>
